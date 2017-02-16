@@ -1,3 +1,10 @@
+function capture()
+{
+  event.preventDefault();
+  console.log(document.shopInfo.filter.value);
+}
+
+
 var products = [
   {
     "name": "Reversible Plaid",
@@ -48,11 +55,18 @@ var products = [
     "imageTitle": "twill.jpg"
   }
 ]
-for (var i = 0; i < products.length; i=i+1)
-  {
-    console.log("Product: "+products[i].name);
-    console.log("Price: "+products[i].price);
-    console.log("Description: "+products[i].description);
-    console.log("----------");
-  }
+//for (var i = 0; i < products.length; i=i+1)
+//  {
+//    console.log("Product: "+products[i].name);
+//    console.log("Price: "+products[i].price);
+//    console.log("Description: "+products[i].description);
+//    console.log("----------");
+//  }
   
+for (var key in products)
+  {
+   // console.log("Product: "+products[key].name);
+   // console.log("Price: "+products[key].price);
+   // console.log("Description: "+products[key].description);
+   // console.log("----------");
+  }
