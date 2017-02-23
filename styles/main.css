@@ -3,10 +3,56 @@
   justify-content: center;
   align-items: center;
 }
-header {
-  background-color:  gray;
+main {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 12rem;
+  flex-wrap:wrap;
+}
+header {
+  
+  padding: 1rem .5rem 0 1rem;
+}
+img {
+  max-width: 100%;
+}
+body {
+  font-size: 100%;
+}
+
+.photo-container {
+      width: 90%;
+      margin: auto;
+      border: solid 1px rgba(189, 63, 191, 0.62);
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+
+.photo-frame {
+      /* equivalent to 49.5% of total browser width,
+      to make calculating srcset easier for us :) */
+      width: 55%;
+    }
+h1 {
+  font-size: 3rem;
+
+  display: inline-block;
+  padding-bottom: 1.5rem;
+  align-content: center;
+  
+}
+
+h2 {
+  font-size: 2.5rem;
+  padding-top: 1.0rem;
+  text-align:center;
+}
+
+h3 {
+  font-size: 1.5rem;
+  text-align: center;
+  
+}
+
+nav ul > li {
+  text-align: center;
 }

@@ -1,7 +1,7 @@
 function capture()
 {
-  event.preventDefault();
   console.log(document.shopInfo.filter.value);
+  event.preventDefault();
 }
 
 
@@ -55,6 +55,19 @@ var products = [
     "imageTitle": "twill.jpg"
   }
 ]
+// TODO: trigger on change of cart contents
+function sumPrices(cartArray) {
+  var sumTotal = 0;
+  for (var i = 0; i < cartArray.length; i=i+1)
+    {
+      if (cartArray[i].price){
+        sumTotal = sumTotal + cartArray[i].price;
+      }
+    }
+  // TODO: print total as HTML to page, next to cart icon
+  console.log(sumTotal);
+      
+}
 //for (var i = 0; i < products.length; i=i+1)
 //  {
 //    console.log("Product: "+products[i].name);
