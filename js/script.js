@@ -1,10 +1,5 @@
-function capture()
-{
-  console.log(document.shopInfo.filter.value);
-  event.preventDefault();
-}
 
-
+var cart = [];
 var products = [
   {
     "name": "Reversible Plaid",
@@ -55,6 +50,138 @@ var products = [
     "imageTitle": "twill.jpg"
   }
 ]
+
+function compareFunc(a,b) {
+  if (a.name.toLowerCase() < b.name.toLowerCase())
+    return -1;
+  if (a.name.toLowerCase() > b.name.toLowerCase())
+    return 1;
+  return 0;
+}
+function compareNumbers(a,b) {
+  return a.price - b.price;
+}
+
+function capture()
+{
+  console.log(document.shopInfo.filter.value);
+  var sortBy = document.shopInfo.filter.value;
+  if (sortBy == "price") {
+    products.sort(compareNumbers);
+    console.log(products);
+  }
+  else if (sortBy = "name") {
+    products.sort(compareFunc);
+    console.log(products);
+  }
+  event.preventDefault();
+}
+
+
+function modifyCart() {
+  var scarf = document.addRemoveForm.addRemove.value;
+ // console.log("scarf in:" + scarf + "end")
+  var index = cart.indexOf(scarf);
+  if (index >= 0) {
+    cart.splice(index,1)
+  }
+  else {
+    cart.push(scarf)
+  }
+  console.log(cart);
+  event.preventDefault();
+}
+function WCKmodifyCart() {
+  var scarf = document.WCKaddRemoveForm.WCKaddRemove.value;
+  //console.log("scarf in:" + scarf + "end")
+  var index = cart.indexOf(scarf);
+  if (index >= 0) {
+    cart.splice(index,1)
+  }
+  else {
+    cart.push(scarf)
+  }
+  console.log(cart);
+  event.preventDefault();
+}
+function NLmodifyCart() {
+  var scarf = document.NLaddRemoveForm.NLaddRemove.value;
+ // console.log("scarf in:" + scarf + "end")
+  var index = cart.indexOf(scarf);
+  if (index >= 0) {
+    cart.splice(index,1)
+  }
+  else {
+    cart.push(scarf)
+  }
+  console.log(cart);
+  event.preventDefault();
+}
+function OImodifyCart() {
+  var scarf = document.OIaddRemoveForm.OIaddRemove.value;
+//  console.log("scarf in:" + scarf + "end")
+  var index = cart.indexOf(scarf);
+  if (index >= 0) {
+    cart.splice(index,1)
+  }
+  else {
+    cart.push(scarf)
+  }
+  console.log(cart);
+  event.preventDefault();
+}
+function FPmodifyCart() {
+  var scarf = document.FPaddRemoveForm.FPaddRemove.value;
+ // console.log("scarf in:" + scarf + "end")
+  var index = cart.indexOf(scarf);
+  if (index >= 0) {
+    cart.splice(index,1)
+  }
+  else {
+    cart.push(scarf)
+  }
+  console.log(cart);
+  event.preventDefault();
+}
+function MCmodifyCart() {
+  var scarf = document.MCaddRemoveForm.MCaddRemove.value;
+ // console.log("scarf in:" + scarf + "end")
+  var index = cart.indexOf(scarf);
+  if (index >= 0) {
+    cart.splice(index,1)
+  }
+  else {
+    cart.push(scarf)
+  }
+  console.log(cart);
+  event.preventDefault();
+}
+function EtromodifyCart() {
+  var scarf = document.EtroaddRemoveForm.EtroaddRemove.value;
+ // console.log("scarf in:" + scarf + "end")
+  var index = cart.indexOf(scarf);
+  if (index >= 0) {
+    cart.splice(index,1)
+  }
+  else {
+    cart.push(scarf)
+  }
+  console.log(cart);
+  event.preventDefault();
+}
+function ATmodifyCart() {
+  var scarf = document.ATaddRemoveForm.ATaddRemove.value;
+ // console.log("scarf in:" + scarf + "end")
+  var index = cart.indexOf(scarf);
+  if (index >= 0) {
+    cart.splice(index,1)
+  }
+  else {
+    cart.push(scarf)
+  }
+  console.log(cart);
+  event.preventDefault();
+}
 // TODO: trigger on change of cart contents
 function sumPrices(cartArray) {
   var sumTotal = 0;

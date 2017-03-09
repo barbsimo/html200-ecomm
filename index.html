@@ -39,7 +39,6 @@
           <option value="name">Name</option>
         </select>
       </label>
-
       <input type="submit" value="Sort">
     </form>
   </aside>
@@ -48,9 +47,11 @@
     <h2>Scarves</h2>
 
     <div class="item-container"> 
+    <!--   <form onSubmit="modifyCart()" name="addRemoveForm"> -->
       <div class="item">
         <div class="pic">
-          <h3>Reversible Plaid</h3>
+         <!--    -->
+          <h3>Reversible Plaid</h3> 
           <img srcset="images/reversible-plaid150.jpg 1280w, images/reversible-plaid100.jpg 800w, images/reversible-plaid50.jpg 400w"
               sizes="(max-width: 800px) 400px, (max-width: 1600px) 800px, (min-width: 1601px) 1200px"
               src="images/reversible-plaid100.jpg"
@@ -60,13 +61,20 @@
             Two classic patterns in one great look: This supersoft and cozy reversible scarf instantly doubles your street-style cred. 100% acrylic. 26.99
             </li>
           </ul>
+          <form onClick="modifyCart()" name="addRemoveForm"> 
+            <label>
+              Click to add or remove scarf to cart
+              <input type="text" name="addRemove" value="Reversible Plaid">
+              <input type="submit" value="+/-">
+            </label>
+          </form>   
         </div>
       </div>
       
       <div class="item">
         <div class="pic">
           <h3>Wool Cable Knit </h3>
-          <img srcset="images/wool-cable150.jpeg 1280w, images/wool-cable100.jpg 800w, images/wool-cable50.jpg 400w"
+          <img srcset="images/wool-cable150.jpeg 1280w, images/wool-cable100.jpeg 800w, images/wool-cable50.jpeg 400w"
               sizes="(max-width: 800px) 400px, (max-width: 1600px) 800px, (min-width: 1601px) 1200px"
               src="images/wool-cable100.jpeg"
               alt="Wool cable scarf">
@@ -75,6 +83,13 @@
               Warm yourself with this women's natural cable knit scarf, crafted from 100% Merino wool. Imported. 49.99
             </li>
           </ul>
+          <form onClick="WCKmodifyCart()" name="WCKaddRemoveForm"> 
+            <label>
+              Click to add or remove WKCscarf to cart
+              <input type="text" name="WCKaddRemove" value="Wool Cable Knit">
+              <input type="button" value="+/-">
+            </label>
+          </form>        
         </div>
       </div>
       
@@ -90,6 +105,13 @@
               Handmade by women in Agra, sales provide medical and educational support in this remote area of India. Crinkly 100% cotton. 29.99
             </li>
           </ul>
+          <form onClick="NLmodifyCart()" name="NLaddRemoveForm"> 
+            <label>
+              Click to add or remove scarf to cart
+              <input type="text" name="NLaddRemove" value="Northern Lights">
+              <input type="button" value="+/-">
+            </label>
+          </form> 
         </div>
       </div>
 
@@ -105,6 +127,13 @@
               A dip-dye effect adds color and dimension to a cozy infinity scarf featuring a soft, chunky knit. 100% acrylic. 11.99
             </li>
           </ul>
+          <form onClick="OImodifyCart()" name="OIaddRemoveForm"> 
+            <label>
+              Click to add or remove scarf to cart
+              <input type="text" name="OIaddRemove" value="Ombre Infinity">
+              <input type="button" value="+/-">
+            </label>
+          </form> 
         </div>
       </div>
       
@@ -120,6 +149,13 @@
               Generously sized, extra soft and featuring a dazzling fringe, this scarf is rendered in a versatile gray, black and white plaid. Expertly beat the cold with style. 100% acrylic. 18.99
             </li>
           </ul>
+          <form onClick="FPmodifyCart()" name="FPaddRemoveForm"> 
+            <label>
+              Click to add or remove scarf to cart
+              <input type="text" name="FPaddRemove" value="Fringed Plaid">
+              <input type="button" value="+/-">
+            </label>
+          </form> 
         </div>
       </div>
       
@@ -135,6 +171,13 @@
               The Who What Wear Oversize Color Block Square Scarf is big, bold, and designed to twist and wrap any way you wish. All the colors of the season are harmonized in this oversize accent, so you can adjust to contrast or match your outfit; soft and lush, it’s your stylish standoff against cold AC and unexpected fall breezes. 100% acrylic. 22.99
             </li>
           </ul>
+          <form onClick="MCmodifyCart()" name="MCaddRemoveForm"> 
+            <label>
+              Click to add or remove scarf to cart
+              <input type="text" name="MCaddRemove" value="Multi Color">
+              <input type="button" value="+/-">
+            </label>
+          </form> 
         </div>
       </div>
       
@@ -150,6 +193,13 @@
               Luxurious silk scarf with subtle paisley pattern. 100% silk. 249.99
             </li>
           </ul>
+          <form onClick="EtromodifyCart()" name="EtroaddRemoveForm"> 
+            <label>
+              Click to add or remove scarf to cart
+              <input type="text" name="EtroaddRemove" value="Etro">
+              <input type="button" value="+/-">
+            </label>
+          </form> 
         </div>
       </div>
      
@@ -165,8 +215,16 @@
               Faribault brings you the Ashby Twill Scarf in Natural. Woven with a 'broken' twill technique, the Ashby Twill Scarf has a slight zigzag texture. Made in USA, this timeless scarf is crafted with luxurious merino wool and finished with heather gray fringe. 100% Merino wool. 70.99
             </li>
           </ul>
+          <form onClick="ATmodifyCart()" name="ATaddRemoveForm"> 
+            <label>
+              Click to add or remove scarf to cart
+              <input type="text" name="ATaddRemove" value="Ashby Twill">
+              <input type="button" value="+/-">
+            </label>
+          </form> 
         </div>
       </div>
+      </form>
     </div>
   </section>
 
