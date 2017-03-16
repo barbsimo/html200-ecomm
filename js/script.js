@@ -102,7 +102,7 @@ function modifyCart() {
   }
   console.log(cart);
   counterid.innerHTML = cart.length;
-  console.log(products[0].imageTitle);
+  //console.log(products[0].imageTitle);
   event.preventDefault();
 }
 function WCKmodifyCart() {
