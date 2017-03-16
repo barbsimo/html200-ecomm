@@ -5,7 +5,11 @@ var products = [
     "name": "Reversible Plaid",
     "price": 26.99,
     "description": "Two classic patterns in one great look: This supersoft and cozy reversible scarf instantly doubles your street-style cred. 100% acrylic.",
-    "imageTitle": "reversible-plaid.jpg"
+    "imageTitle": "reversible-plad.jpg"
+    //" <img srcset='images/reversible-plaid150.jpg 1280w, images/reversible-plaid100.jpg 800w, images/reversible-plaid50.jpg 400w'
+   //           sizes='(max-width: 800px) 400px, (max-width: 1600px) 800px, (min-width: 1601px) 1200px'
+   //           src='images/reversible-plaid100.jpg'
+   //           alt='Reversible plaid scarf'>" 
   },
   {
     "name": "Wool Cable Knit",
@@ -51,6 +55,14 @@ var products = [
   }
 ]
 
+window.onload = function() {
+  //alert("blah blah");
+  var picture = document.getElementById("picture");
+ // picture.innerHTML = products[0].imageTitle;
+  descript.innerHTML = products[0].description;
+  console.log(products[0].imageTitle);
+}
+
 function compareFunc(a,b) {
   if (a.name.toLowerCase() < b.name.toLowerCase())
     return -1;
@@ -89,6 +101,8 @@ function modifyCart() {
     cart.push(scarf)
   }
   console.log(cart);
+  counterid.innerHTML = cart.length;
+  console.log(products[0].imageTitle);
   event.preventDefault();
 }
 function WCKmodifyCart() {
@@ -102,6 +116,7 @@ function WCKmodifyCart() {
     cart.push(scarf)
   }
   console.log(cart);
+  counterid.innerHTML = cart.length;
   event.preventDefault();
 }
 function NLmodifyCart() {
@@ -115,6 +130,7 @@ function NLmodifyCart() {
     cart.push(scarf)
   }
   console.log(cart);
+  counterid.innerHTML = cart.length;
   event.preventDefault();
 }
 function OImodifyCart() {
@@ -128,6 +144,7 @@ function OImodifyCart() {
     cart.push(scarf)
   }
   console.log(cart);
+  counterid.innerHTML = cart.length;
   event.preventDefault();
 }
 function FPmodifyCart() {
@@ -141,6 +158,7 @@ function FPmodifyCart() {
     cart.push(scarf)
   }
   console.log(cart);
+  counterid.innerHTML = cart.length;
   event.preventDefault();
 }
 function MCmodifyCart() {
@@ -154,6 +172,7 @@ function MCmodifyCart() {
     cart.push(scarf)
   }
   console.log(cart);
+  counterid.innerHTML = cart.length;
   event.preventDefault();
 }
 function EtromodifyCart() {
@@ -167,6 +186,7 @@ function EtromodifyCart() {
     cart.push(scarf)
   }
   console.log(cart);
+  counterid.innerHTML = cart.length;
   event.preventDefault();
 }
 function ATmodifyCart() {

@@ -2,14 +2,11 @@
 <html>
 <head>
   <title>Winter Scarves</title>
-
   <meta charset="utf-8">
-
   <link rel="stylesheet" href="styles/reset.css">
   <link rel="stylesheet" href="styles/main.css">
-
-  <!-- replace with your personal Font Awesome CDN link -->
   <script src="https://use.fontawesome.com/b130e34a85.js"></script>
+  <script type="text/javascript" src="js/script.js"></script>
 </head>
 
 <body>
@@ -21,8 +18,9 @@
         <li><a href="#">Gloves</a></li>
         <li><a href="#">Scarves</a></li>
         <li class="cart-info">
-          <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+          <i class="fa fa-shopping-cart" aria-hidden="true"></i><count id="counterid"></count> 
         </li>
+
       </ul>
     </nav>
     
@@ -55,10 +53,11 @@
           <img srcset="images/reversible-plaid150.jpg 1280w, images/reversible-plaid100.jpg 800w, images/reversible-plaid50.jpg 400w"
               sizes="(max-width: 800px) 400px, (max-width: 1600px) 800px, (min-width: 1601px) 1200px"
               src="images/reversible-plaid100.jpg"
-              alt="Reversible plaid scarf">
+              alt="Reversible plaid scarf">  
+          <!--<div id="picture"></div> -->
           <ul>
             <li class="desc">
-            Two classic patterns in one great look: This supersoft and cozy reversible scarf instantly doubles your street-style cred. 100% acrylic. 26.99
+              <descript id="descript"></descript>
             </li>
           </ul>
           <form onClick="modifyCart()" name="addRemoveForm"> 
@@ -228,6 +227,6 @@
     </div>
   </section>
 
-  <script type="text/javascript" src="js/script.js"></script>
+  
 </body>
 </html>
